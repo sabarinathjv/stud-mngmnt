@@ -5,8 +5,9 @@ from .views import StudLists,studDetail
 
 urlpatterns = [
 
-    path('', StudLists.as_view(), name='listcreate'),#studDetail
+    path('', StudLists.as_view(), name='listcreate'),
     path('<int:pk>/', studDetail.as_view(), name='detail'),
+
 
     
 ]
